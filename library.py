@@ -13,3 +13,6 @@ class Library:
     def show_books_list(self):
         print self.books_list
         return self.books_list
+    def show_invenyory(self):
+        print self.inventory
+        return self.inventory
