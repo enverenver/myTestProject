@@ -6,7 +6,6 @@ import teacher
 
 
 
-
 library = library.Library()
 student = st.Student('Arthur')
 student2 = st.Student('Bim')
@@ -43,12 +42,20 @@ library.add_book_to_library(book10)
 
 
 library.show_books_list()
-student.take_book_from_library(library, book1)
-student.take_book_from_library(library, book2)
-student.take_book_from_library(library, book3)
+#student.take_book_from_library(library, book1)
+#student.take_book_from_library(library, book2)
+#student.take_book_from_library(library, book3)
 #student.take_book_from_library(library, book4)
 #library.take_book_from_library('pytnonBook7')
 library.show_books_list()
 
-student.return_book_to_library(library, book2)
-library.show_invenyory()
+
+library.take_book_from_library(book7, student.name, student.reader_type)
+library.take_book_from_library(book6, student.name, student.reader_type)
+library.take_book_from_library(book5, student.name, student.reader_type)
+library.take_book_from_library(book4, student.name, student.reader_type)
+
+#library.take_book_from_library(book5, student.name)
+
+#print (library.inventory.get('Arthur'))
+
